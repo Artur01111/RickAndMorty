@@ -21,14 +21,11 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
         buildConfig = true
     }
-
 
     buildTypes {
         debug {
@@ -82,6 +79,10 @@ dependencies {
 
     //Images from URL
     implementation (libs.coil.compose)
+
+    implementation (libs.androidx.paging.runtime)
+    implementation (libs.androidx.paging.compose)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
